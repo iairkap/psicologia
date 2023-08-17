@@ -71,7 +71,11 @@ export default function Home() {
         </section>
 
         {/* Sección 4 */}
-        <section></section>
+        <section>
+          <div className="h-36">
+            <p>Info de la sección 4</p>
+          </div>
+        </section>
       </main>
 
       <Footer />

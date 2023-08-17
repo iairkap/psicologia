@@ -37,7 +37,7 @@ const Navbar = ({ activeRoute }) => {
   };
 
   return (
-    <nav className="flex fixed justify-between items-center hrefp-0 fixed z-10 w-full py-5 px-8 text-sm font-medium">
+    <nav className="flex fixed bg-white justify-between items-center hrefp-0 fixed z-10 w-full py-5 px-8 text-sm font-medium">
       <ul className="flex items-center gap-3">
         <li className="font-semibold text-lg">
           <Link href="/">
