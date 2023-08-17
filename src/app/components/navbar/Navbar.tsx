@@ -51,7 +51,7 @@ const Navbar = ({ activeRoute }) => {
           </Link>
         </li>
         <li>
-          <h1 className="font-semibold text-lg">Psicologa Name</h1>
+          <h1 className="font-semibold text-lg">Psicolog@</h1>
         </li>
       </ul>
       {/* ---------- Hamburger Menu --------- */}

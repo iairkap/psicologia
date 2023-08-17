@@ -5,7 +5,7 @@
 
 const nextConfig = {
   images: {
-    domains: ["img.freepik.com"], // Agrega el dominio aquí
+    domains: ["img.freepik.com", "images.pexels.com"], // Agrega los dominios aquí separados por comas
   },
 };
 
