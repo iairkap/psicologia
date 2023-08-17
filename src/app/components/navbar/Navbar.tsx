@@ -69,7 +69,7 @@ const Navbar = ({ activeRoute }) => {
       )}
       {/* Hamburger menu links */}
       {isMenuOpen && (
-        <ul className="md:hidden flex flex-col gap-3 text-sm">
+        <ul className="md:hidden flex flex-col gap-3 text-sm cursor-pointer">
           <li>
             <li className="hover:underline hover:text-dark-pink hover:font-semibold hover:underline-offset-4">
               <Link href="/">INICIO</Link>
@@ -87,7 +87,7 @@ const Navbar = ({ activeRoute }) => {
 
       {/* --------- Largest Menu ---------- */}
       {windowWidth >= 656 && !isMenuOpen && (
-        <ul className={`flex items-center gap-3 text-lg`}>
+        <ul className={`flex items-center gap-3 text-lg cursor-pointer`}>
           <li
             className={`${
               isRouteActive("/") ? activeListItemStyle : ""
@@ -113,7 +113,7 @@ const Navbar = ({ activeRoute }) => {
       )}
       {/* --------- Finish Largest Menu ---------- */}
 
-      <ul className="flex items-center gap-3 font-semibold text-lg">
+      <ul className="flex items-center gap-3 font-semibold text-lg cursor-pointer">
         <button
           className={`global-button border border-dark-pink rounded-lg px-4 py-2 text-dark-pink cursor-pointer ${
             windowWidth <= 390 ? "text-sm py-1 px-2" : ""
