@@ -18,26 +18,26 @@ export default function Home() {
         <section className="firts-section flex p-4">
           <div className="w-1/2 pr-4">
             <Image
-              src="https://images.pexels.com/photos/4466205/pexels-photo-4466205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://images.pexels.com/photos/5207589/pexels-photo-5207589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Imagen de la sección 1"
               width={500}
-              height={300}
+              height={600}
             />
           </div>
           <div className="w-1/2 ">
-            <div className="font-semibold mt-20">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl">
+            <div className="font-semibold">
+              <h1 className="text-2xl lg:text-3xl">
                 Acompañamiento Terapéutico en Neuquen
               </h1>
             </div>
-            <div className="mt-12 text-light-pink font-semibold">
-              <h2 className="text-lg md:text-xl lg:text-2xl">
+            <div className="mt-4 text-light-pink font-semibold">
+              <h2 className="text-lg lg:text-xl">
                 Tu Psicóloga Perinatal de Confianza Construyendo Familias
                 Fuertes desde el Inicio.
               </h2>
             </div>
             <Link href="/schedule">
-              <button className="global-primary-button mt-12">
+              <button className="global-primary-button mt-4">
                 Pedir Turno
               </button>
             </Link>
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="w-1/2">
             <Image
-              src="/path-to-your-image.jpg"
+              src="https://images.pexels.com/photos/5207589/pexels-photo-5207589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Imagen de la sección 2"
               width={500}
               height={300}
