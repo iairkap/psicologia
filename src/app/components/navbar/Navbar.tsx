@@ -56,7 +56,7 @@ const Navbar = ({ activeRoute }) => {
       </ul>
       {/* ---------- Hamburger Menu --------- */}
       {/* Hamburger menu button */}
-      {window.innerWidth <= 390 && (
+      {window.innerWidth <= 655 && (
         <button
           onClick={toggleMenu}
           className={`md:hidden text-4xl mr-3 ${
@@ -86,7 +86,7 @@ const Navbar = ({ activeRoute }) => {
       {/* --------- Finish Hamburger Menu ---------- */}
 
       {/* --------- Largest Menu ---------- */}
-      {windowWidth >= 391 && !isMenuOpen && (
+      {windowWidth >= 656 && !isMenuOpen && (
         <ul className={`flex items-center gap-3 text-lg`}>
           <li
             className={`${
