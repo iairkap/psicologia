@@ -37,7 +37,7 @@ const Navbar = ({ activeRoute }) => {
   };
 
   return (
-    <nav className="flex fixed justify-between items-center hrefp-0 fixed z-10 w-full py-5 px-8 text-sm font-light">
+    <nav className="flex fixed justify-between items-center hrefp-0 fixed z-10 w-full py-5 px-8 text-sm font-medium">
       <ul className="flex items-center gap-3">
         <li className="font-semibold text-lg">
           <Link href="/">
@@ -69,17 +69,15 @@ const Navbar = ({ activeRoute }) => {
       )}
       {/* Hamburger menu links */}
       {isMenuOpen && (
-        <ul className="md:hidden flex flex-col gap-3 text-sm cursor-pointer">
-          <li>
-            <li className="hover:underline hover:text-dark-pink hover:font-semibold hover:underline-offset-4">
-              <Link href="/">INICIO</Link>
-            </li>
-            <li className="hover:underline hover:text-dark-pink hover:font-semibold hover:underline-offset-4">
-              <Link href="/article">ARTÍCULOS</Link>
-            </li>
-            <li className="hover:underline hover:text-dark-pink hover:font-semibold hover:underline-offset-4">
-              <Link href="/about">SOBRE MI</Link>
-            </li>
+        <ul className="md:hidden flex flex-col gap-3 text-sm cursor-pointer font-medium">
+          <li className="hover:underline hover:text-dark-pink hover:font-semibold hover:underline-offset-4">
+            <Link href="/">INICIO</Link>
+          </li>
+          <li className="hover:underline hover:text-dark-pink hover:font-semibold hover:underline-offset-4">
+            <Link href="/article">ARTÍCULOS</Link>
+          </li>
+          <li className="hover:underline hover:text-dark-pink hover:font-semibold hover:underline-offset-4">
+            <Link href="/about">SOBRE MI</Link>
           </li>
         </ul>
       )}
