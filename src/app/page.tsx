@@ -25,20 +25,30 @@ export default function Home() {
             />
           </div>
           <div className="w-1/2 ">
-            <div className="">
-              <h1>Acompañamiento Terapéutico en Neuquen</h1>
+            <div className="font-semibold mt-20">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl">
+                Acompañamiento Terapéutico en Neuquen
+              </h1>
             </div>
-            <div>
-              <h1>Acompañamiento Terapéutico en Neuquen</h1>
+            <div className="mt-12 text-light-pink font-semibold">
+              <h2 className="text-lg md:text-xl lg:text-2xl">
+                Tu Psicóloga Perinatal de Confianza Construyendo Familias
+                Fuertes desde el Inicio.
+              </h2>
             </div>
             <Link href="/schedule">
-              <button className="global-primary-button">Pedir Turno</button>
+              <button className="global-primary-button mt-12">
+                Pedir Turno
+              </button>
             </Link>
           </div>
         </section>
 
         {/* Sección 2 */}
         <section className="flex p-4">
+          <div className="w-1/2 pl-4">
+            <p>Texto de la sección 2</p>
+          </div>
           <div className="w-1/2">
             <Image
               src="/path-to-your-image.jpg"
@@ -46,9 +56,6 @@ export default function Home() {
               width={500}
               height={300}
             />
-          </div>
-          <div className="w-1/2 pl-4">
-            <p>Texto de la sección 2</p>
           </div>
         </section>
 
@@ -71,7 +78,7 @@ export default function Home() {
         </section>
 
         {/* Sección 4 */}
-        <section>
+        <section className="flex p-4">
           <div className="h-36">
             <p>Info de la sección 4</p>
           </div>
