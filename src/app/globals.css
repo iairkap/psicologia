@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Oxygen:wght@200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,26 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-primary: #F2F2F0;
+  --color-light-pink: #F2B0A0;
+  --color-dark-pink: #F26458;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-brown: #C08665;
+  --color-grey: #D9C9BA;
+}
+.global-button {
+  border: 1px solid var(--color-dark-pink); 
+  border-radius: 0.375rem; 
+  padding: 0.5rem 1rem; 
+  color: var(--color-dark-pink); 
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s; 
+}
+
+.global-button:hover {
+  background-color: var(--color-dark-pink); 
+  color: var(--color-white);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +39,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--primary))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--primary));
 }
