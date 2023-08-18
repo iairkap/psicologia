@@ -1,0 +1,6 @@
+.footer {
+    width: 100%;
+    flex-shrink: 0; /* Evita que el footer afecte el crecimiento del contenido principal */
+    background-color: var(--color-light-pink);
+    padding: 20px;
+  }
