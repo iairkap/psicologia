@@ -193,9 +193,39 @@ export default function Home() {
         </section>
 
         <MyModal isOpen={modalIsOpen} closeModal={closeModal}>
-          <h2>Título del Modal</h2>
-          <p>Descripción del modal.</p>
-          <p>Contenido del modal.</p>
+          <div className="mt-5">
+            <h2 className="text-base font-semibold">Psicología Infantil</h2>
+            <p className="text-sm font-medium mt-10">
+              Con dedicación y profesionalismo, te acompaño en cada etapa de tu
+              proceso reproductivo, brindando apoyo y contención en:
+            </p>
+            <div className="text-sm font-medium mt-5">
+              <p className="flex items-center">
+                <span className="mr-2 text-dark-pink">&#8226;</span>
+                Duelo gestacional.
+              </p>
+              <p className="flex items-center">
+                <span className="mr-2 text-dark-pink">&#8226;</span>
+                Acompañamiento a mujeres en proceso de búsqueda de embarazo.
+              </p>
+              <p className="flex items-center">
+                <span className="mr-2 text-dark-pink">&#8226;</span>
+                Duelo estacional por IVE/ILE.
+              </p>
+              <p className="flex items-center">
+                <span className="mr-2 text-dark-pink">&#8226;</span>
+                Crisis y patologías asociadas al embarazo.
+              </p>
+              <p className="flex items-center">
+                <span className="mr-2 text-dark-pink">&#8226;</span>
+                Crisis y patologías asociadas al parto.
+              </p>
+              <p className="flex items-center">
+                <span className="mr-2 text-dark-pink">&#8226;</span>
+                Crisis y patologías asociadas al puerperio.
+              </p>
+            </div>
+          </div>
         </MyModal>
       </main>
 
