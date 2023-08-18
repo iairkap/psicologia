@@ -35,16 +35,17 @@ export default function Home() {
 
       <main className="overflow-y-auto mt-36 flex-grow">
         {/* Section 1 */}
-        <section className="firts-section flex p-4">
-          <div className="w-1/2 pr-4">
+        <section className="firts-section flex flex-col md:flex-row p-4">
+          <div className="w-full md:w-1/2 pr-4">
             <Image
               src="https://images.pexels.com/photos/5207589/pexels-photo-5207589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Imagen de la sección 1"
               width={500}
               height={600}
+              className="w-full md:w-auto"
             />
           </div>
-          <div className="w-1/2 ">
+          <div className="w-full md:w-1/2">
             <div className="font-semibold">
               <h1 className="text-2xl lg:text-3xl">
                 Acompañamiento Terapéutico en Neuquen
@@ -65,8 +66,8 @@ export default function Home() {
         </section>
 
         {/* Section 2 */}
-        <section className="flex p-4 mt-20">
-          <div className="w-1/2 pl-4">
+        <section className="flex flex-col-reverse md:flex-row p-4 mt-20">
+          <div className="w-full md:w-1/2 pl-4">
             <div>
               <p>
                 <span className="text-dark-pink font-medium">¡Hola!</span> Soy
@@ -92,12 +93,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <Image
               src="https://images.pexels.com/photos/7631944/pexels-photo-7631944.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Imagen de la sección 2"
               width={500}
               height={300}
+              className="w-full md:w-auto"
             />
           </div>
         </section>
@@ -108,7 +110,7 @@ export default function Home() {
             <h2>SERVICIOS</h2>
           </div>
           <div className="flex p-4 space-x-4">
-            <div className="w-1/3 text-white">
+            <div className="w-1/3 text-white flex flex-col justify-between items-start">
               <Image
                 src={Vector1}
                 alt="Perinatal"
@@ -123,15 +125,16 @@ export default function Home() {
                 todo el proceso desde la concepción, embarazo, parto, postparto
                 y puerperio.
               </h3>
-              <button
-                className="text-black font-semibold bg-dark-pink mt-3 text-sm bg-grey rounded-md px-4 py-2 font-medium"
-                onClick={openModal}
-              >
-                VER MÁS...
-              </button>
+              <div className="mt-auto">
+                <button
+                  className="text-black font-semibold bg-dark-pink mt-3 text-sm bg-grey rounded-md px-4 py-2 font-medium"
+                  onClick={openModal}
+                >
+                  VER MÁS...
+                </button>
+              </div>
             </div>
-
-            <div className="w-1/3 text-white">
+            <div className="w-1/3 text-white flex flex-col justify-between items-start">
               <Image
                 src={Vector2}
                 alt="Perinatal"
@@ -139,9 +142,7 @@ export default function Home() {
                 height={50}
                 className="mb-4 "
               />
-              <h3 className="font-semibold text-lg">
-                Psicología Clínica de Adultos
-              </h3>
+              <h3 className="font-semibold">Psicología Clínica de Adultos</h3>
               <h3 className="mt-3 text-sm">
                 Ayudar al manejo del malestar provocado por procesos de duelo,
                 estrés académico o laboral, dificultades familiares, rupturas
@@ -149,15 +150,16 @@ export default function Home() {
                 autoestima, miedos, fobias, enfermedades, dolor crónico entre
                 otros.
               </h3>
-              <button
-                className="text-black font-semibold bg-dark-pink mt-3 text-sm bg-grey rounded-md px-4 py-2 font-medium"
-                onClick={openModal}
-              >
-                VER MÁS...
-              </button>
+              <div className="mt-auto">
+                <button
+                  className="text-black font-semibold bg-dark-pink mt-3 text-sm bg-grey rounded-md px-4 py-2 font-medium"
+                  onClick={openModal}
+                >
+                  VER MÁS...
+                </button>
+              </div>
             </div>
-
-            <div className="w-1/3 text-white">
+            <div className="w-1/3 text-white flex flex-col justify-between items-start">
               <Image
                 src={Vector3}
                 alt="Perinatal"
@@ -171,12 +173,14 @@ export default function Home() {
                 del neurodesarrollo de los niños y adolescentes (autismo,
                 hiperactividad, adicciones…).
               </h3>
-              <button
-                className="text-black font-semibold bg-dark-pink mt-3 text-sm bg-grey rounded-md px-4 py-2 font-medium"
-                onClick={openModal}
-              >
-                VER MÁS...
-              </button>
+              <div className="mt-auto">
+                <button
+                  className="text-black font-semibold bg-dark-pink mt-3 text-sm bg-grey rounded-md px-4 py-2 font-medium"
+                  onClick={openModal}
+                >
+                  VER MÁS...
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -189,8 +193,9 @@ export default function Home() {
         </section>
 
         <MyModal isOpen={modalIsOpen} closeModal={closeModal}>
-          <h2>Contenido del Modal</h2>
-          <p>Aquí puedes agregar el contenido del modal.</p>
+          <h2>Título del Modal</h2>
+          <p>Descripción del modal.</p>
+          <p>Contenido del modal.</p>
         </MyModal>
       </main>
 
